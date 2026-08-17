@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Tabata Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Tabata Timer</h1>
+
+    <div class="phase" id="phase">READY</div>
+    <div class="time" id="time">20</div>
+    <div class="round" id="round">Round 1 / 8</div>
+
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" class="btn primary">Start</button>
+      <button id="pauseBtn" class="btn" disabled>Pause</button>
+      <button id="resetBtn" class="btn">Reset</button>
+    </div>
+
+    <details class="settings">
+      <summary>Settings</summary>
+      <div class="settings-grid">
+        <label>Work (s)
+          <input type="number" id="workInput" min="1" max="600" value="20">
+        </label>
+        <label>Rest (s)
+          <input type="number" id="restInput" min="1" max="600" value="10">
+        </label>
+        <label>Rounds
+          <input type="number" id="roundsInput" min="1" max="50" value="8">
+        </label>
+      </div>
+    </details>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
